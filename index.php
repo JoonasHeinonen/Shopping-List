@@ -35,7 +35,8 @@
                     if ($resultCheck > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo "<ul>";
-                            echo "<li><p>" . $row['product_name'] . ", " . $row['product_prize'] . " €</p></li><br>";
+                            echo "  <li><p>" . $row['product_name'] . ", " . $row['product_prize'] . " €</p>";
+                            echo "<button class='delete-button'><b>X</b></button></li><button class='overline-button'><b>-</b></button>";
                             echo "</ul>";
                         }
                     }
@@ -58,7 +59,7 @@
                     <input type="text" name="product-name" placeholder="The name of the product..."><br>
                     <input type="number" name="product-prize" step="0.01" placeholder="The price of the product..."><br>
                     <input type="number" name="product-type" placeholder="Product type..."><br>
-                    <button type="submit" name="submit">Submit!</button>
+                    <button type="submit" id="submit-button" name="submit">Submit!</button>'
                 </form>
             </div>
         </article>

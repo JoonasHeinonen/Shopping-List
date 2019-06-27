@@ -20,7 +20,7 @@ article {
     text-align: center;
 }
 
-button, input {
+#submit-button, input {
     outline:0px;
 }
 
@@ -51,13 +51,13 @@ input, h3 {
     border-color: #b6b6b6;
 }
 
-.form-box, button {
+#submit-button, .form-box {
     background-color: white;
     color: #b6b6b6;
     margin: 16px auto;
 }
 
-button {   
+#submit-button {   
     font-size: 30px;
     width: 4em;
     color: rgb(0, 0, 255);
@@ -70,7 +70,7 @@ button {
     border-top: none;
 }
 
-button:hover {
+#submit-button:hover {
     color: rgb(65, 65, 255);
     border-color: rgb(65, 65, 255);
     transition: .8s;
@@ -105,7 +105,7 @@ ul {
     padding: 18px 0px 8px 0px;
 }
 
-button, h3 {
+#submit-button, h3 {
     font-family: digitalStrip;
 }
 
@@ -123,4 +123,9 @@ h3 {
     border-radius: 50%;
     display: inline-block;
     margin: 12px 12px 0px 0px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
 }
