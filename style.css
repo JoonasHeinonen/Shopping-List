@@ -20,7 +20,7 @@ article {
     text-align: center;
 }
 
-#submit-button, input {
+#submit-button, .delete-button, .overline-button, input {
     outline:0px;
 }
 
@@ -51,15 +51,14 @@ input, h3 {
     border-color: #b6b6b6;
 }
 
-#submit-button, .form-box {
+#submit-button, .delete-button, .overline-button, .form-box {
     background-color: white;
     color: #b6b6b6;
     margin: 16px auto;
 }
 
-#submit-button {   
+#submit-button, .delete-button, .overline-button {   
     font-size: 30px;
-    width: 4em;
     color: rgb(0, 0, 255);
     margin: 20px 20px;
     border-style: solid;
@@ -68,6 +67,10 @@ input, h3 {
     border-left: none;
     border-right: none;
     border-top: none;
+}
+
+#submit-button {
+    width: 4em;
 }
 
 #submit-button:hover {
@@ -105,7 +108,7 @@ ul {
     padding: 18px 0px 8px 0px;
 }
 
-#submit-button, h3 {
+#submit-button, .delete-button, .overline-button, h3 {
     font-family: digitalStrip;
 }
 
@@ -125,7 +128,12 @@ h3 {
     margin: 12px 12px 0px 0px;
 }
 
-button {
+button, .item-in-list {
     display: inline-block;
-    margin: 10px;
+}
+
+button, .delete-button, .overline-button {
+    float: left;
+    margin: 6px 6px 6px 0px;
+    border-width: 0px;
 }

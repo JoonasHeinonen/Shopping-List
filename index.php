@@ -34,10 +34,10 @@
 
                     if ($resultCheck > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<ul>";
+                            echo "<ul><div class='item-in-list'>";
                             echo "  <li><p>" . $row['product_name'] . ", " . $row['product_prize'] . " €</p>";
                             echo "<button class='delete-button'><b>X</b></button></li><button class='overline-button'><b>-</b></button>";
-                            echo "</ul>";
+                            echo "</div></ul>";
                         }
                     }
                     
